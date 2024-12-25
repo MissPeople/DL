@@ -27,6 +27,9 @@ class ResidualModule(nn.Module):
 
 
 class SpecialModule(nn.Module):
+    """
+        This module mainly uses 1*1 convolutional layers to achieve upscaling and downscaling.
+    """
     def __init__(self, in_channel, out_channel, kernel, stride, padding):
         super(SpecialModule, self).__init__()
         self.normal = Sequential(
@@ -49,6 +52,9 @@ class SpecialModule(nn.Module):
 
 
 class ResNet18(nn.Module):
+    """
+        this module apply size is 224*224
+    """
     def __init__(self):
         super(ResNet18, self).__init__()
         self.prepare = Sequential(
