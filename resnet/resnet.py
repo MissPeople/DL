@@ -28,7 +28,7 @@ class ResidualModule(nn.Module):
 
 class SpecialModule(nn.Module):
     """
-        This module mainly uses 1*1 convolutional layers to achieve upscaling and downscaling.
+        mainly use a 1*1 convolution kernel to implement boosting and downsampling
     """
     def __init__(self, in_channel, out_channel, kernel, stride, padding):
         super(SpecialModule, self).__init__()
