@@ -1,6 +1,5 @@
 # Author    : zhiping
 import torch
-from tqdm import tqdm
 
 
 def train(train_loader, model, criterion, optimizer):
