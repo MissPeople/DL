@@ -3,6 +3,7 @@ from torch import optim
 from torch.utils.data import DataLoader
 from torchvision import datasets
 from torchvision.transforms import transforms
+from tqdm import tqdm
 
 from basic.common import *
 from resnet import *
