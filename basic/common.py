@@ -14,7 +14,6 @@ def train(train_loader, model, criterion, optimizer):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-    return model
 
 
 def vail(test_loader, model):

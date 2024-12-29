@@ -25,5 +25,5 @@ optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.
 
 if __name__ == "__main__":
     for i in tqdm(range(epoch)):
-        _model = train(train_loader, model, criterion, optimizer)
-        vail(test_loader, _model)
+        train(train_loader, model, criterion, optimizer)
+        vail(test_loader, model)
