@@ -5,3 +5,4 @@ this is a repository about deep learning
 this is a package about resnet architecture usage,
 the original source is https://arxiv.org/abs/1512.03385
 ![img.png](resnet/res/architecture.png)
+the model can be see![model.png](resnet/res/model.jpg)
